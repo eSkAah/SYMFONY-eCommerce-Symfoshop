@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block title %}{{product.name}} - SymfoShop{% endblock %}
+
+
+{% block content %}
+
+<div class="row">
+
+    <div class="mt-5 col-sm-5 col-12">
+        <img src="/uploads/{{product.illustration}}" alt="{{product.name}}" class="img-fluid">
+    </div>
+
+    <div class="col-sm-7 my-auto">
+            <div class="mt-5 product-item text-center">
+                <h2><strong>{{product.name}}</strong></h2>
+                <span class="product-subtitle">{{product.subtitle}}</span>
+                <span class="product-price">{{(product.price/100) |number_format(2)}}€</span>
+                <hr>
+                <p class="product-description">{{product.description}}</p>
+                <hr>
+                <a href="{{path('add_to_cart', {'id' : product.id} )}}" class="btn btn-primary">Ajouter au panier</a>
+                <a href="{{path('products')}}" class="btn btn-danger">Retour aux produits</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

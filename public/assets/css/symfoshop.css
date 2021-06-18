@@ -1,0 +1,30 @@
+.navbar-item-custom, .navbar-item-custom a {
+    color: white;
+}
+
+.footer-custom {
+    text-align: center;    
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding-top: 25px;
+
+}
+
+.product-item h5 {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.product-subtitle {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
